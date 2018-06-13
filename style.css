@@ -1,0 +1,116 @@
+
+/* ==========================
+======== BASE-STYLES ========
+=============================*/
+
+*{
+  box-sizing : border-box;
+}
+
+body,
+html{
+  width : 100%;
+  height : 100%;
+  margin : 0;
+  padding : 0;
+}
+
+body{
+  background-color :  #2c3e50;
+  font-family : "Ubuntu", sans-serif;
+  font-size : 16px;
+  line-height: 1.5em;
+  color : white;
+}
+
+.container{
+  width : 80%;
+  margin : 0 auto;
+}
+
+a{
+  text-decoration: none;
+  display : inline-block;
+}
+
+ul{
+  list-style : none;
+  padding : 0;
+  margin : 0;
+}
+
+/* ===========================
+======== NAV-STYLES ==========
+============================== */
+
+.navbar {
+  margin-top : 20px;
+}
+
+.navbar a{
+  width : 100%;
+  padding : 10px;
+  text-align : center;
+  font-size : 20px; 
+  background-color : #2c3e50;
+  color : #D2D7D3;
+  border : 1.5px solid #D2D7D3
+}
+
+.navbar a:active{
+  color :  #2c3e50;
+  background-color : #D2D7D3;
+}
+
+.nav-grid-item a{
+  margin-bottom : 15px; 
+}
+
+
+/* =============================
+========= Media Queries=========
+================================ */
+
+@media screen and (min-width : 576px){
+  .nav-grid-container{
+    display : flex;
+    flex-direction: row;
+    flex-wrap : wrap;
+  }
+
+  .nav-grid-item a{
+    margin-bottom : 0px;
+  }
+
+  .nav-grid-item{
+    margin-bottom : 10px;
+    margin-right : 10px;
+    flex-grow : 1;
+    flex-basis : 150px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
