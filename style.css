@@ -81,7 +81,7 @@ ul{
 .show-grid-container{
   display: grid;
   grid-template-columns : 1fr 1fr;
-  grid-auto-rows : 250px;
+  grid-auto-rows : 280px;
   grid-gap : 5px 5px;
 }
 
@@ -165,7 +165,7 @@ ul{
   color : #007bb6;
 }
 
-.show-price a{
+.read-more-link{
   display: inline-block;
   padding : 10px;
   width : 80%;
@@ -176,7 +176,7 @@ ul{
   background-color : #2c3e50;
 }
 
-.show-price a:active{
+.read-more-link:active{
   background-color: #D2D7D3;
   color : #2c3e50;
 }
@@ -192,6 +192,7 @@ ul{
 
 .show-features h2{
   padding : 10px 0;
+  font-size: 20px;
 }
 
 .show-features p {
@@ -200,11 +201,51 @@ ul{
 
 .show-features img{
   display: block;
-  width : 40%;
-  height: 35%;
+  width : 60%;
+  height: 40%;
   margin : 10px auto 0px auto;
 }
 
+
+/* =============================
+========== Read More ===========
+================================ */
+
+.read-more{
+  background-color : #D2D7D3;
+  margin: 10px 0;
+  width: 100%;
+  padding : 20px;
+}
+
+.read-grid-container{
+  width : 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap : 10px 10px;
+  color : #2c3e50;
+}
+
+.read-grid-container img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 445px;
+  max-height: 310px;
+  margin : auto;
+}
+
+.read-pitch {
+  padding : 20px;
+}
+
+.read-pitch-link{
+  max-width: 200px;
+}
+
+.read-pitch p{
+  padding : 20px 0px;
+}
 
 
 /* =============================
@@ -233,6 +274,7 @@ ul{
     flex-basis : 150px;
   }
 
+  /* ICON RESIZE */
   .show-features img{
     width: 30%;
     height: 40%;
@@ -273,14 +315,22 @@ ul{
     font-size : 15px;
   }
 
+  /* ICON RESIZE */
   .show-features img{
     width: 70%;
     height: 40%;
+  }
+
+  .read-grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 
 @media screen and (min-width : 920px){
+
+  /* ICON RESIZE */
   .show-features img{
     width: 50%;
     height: 40%;
@@ -295,10 +345,15 @@ ul{
     margin : 0 auto;
   }
 
+  /* ICON RESIZE */
   .show-features img{
-    width: 42%;
+    width: 48%;
     height: 40%;
     margin-top: 20px;
+  }
+
+  .show-features h2{
+    font-size: 24px;
   }
 
 }
