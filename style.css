@@ -30,7 +30,8 @@ body{
 }
 
 h1,
-p{
+p,
+h2, h3{
   padding : 0;
   margin : 0;
 }
@@ -76,10 +77,6 @@ ul{
 /* =============================
 ========= Showcase =============
 ================================ */
-
-.showcase{
-  border : 1px solid black;
-}
 
 .show-grid-container{
   display: grid;
@@ -154,7 +151,7 @@ ul{
 }
 
 .show-plan{
-  padding : 10px;
+  padding : 10px 0px 0px 0px;
   text-decoration: underline;
   text-align: center;
 }
@@ -165,7 +162,7 @@ ul{
   display: flex;
   justify-content: center;
   align-items: center;
-  color :  #00bf8f;
+  color : #007bb6;
 }
 
 .show-price a{
@@ -183,6 +180,32 @@ ul{
   background-color: #D2D7D3;
   color : #2c3e50;
 }
+
+.show-features div{
+  width : 100%;
+  height: 100%;
+  padding : 10px;
+  text-align: center;
+  background-color: #D2D7D3;
+  color : #2c3e50
+}
+
+.show-features h2{
+  padding : 10px 0;
+}
+
+.show-features p {
+  font-size: 12px;
+}
+
+.show-features img{
+  display: block;
+  width : 40%;
+  height: 35%;
+  margin : 10px auto 0px auto;
+}
+
+
 
 /* =============================
 ========= Media Queries=========
@@ -208,6 +231,19 @@ ul{
     margin-bottom : 10px;
     flex-grow : 1;
     flex-basis : 150px;
+  }
+
+  .show-features img{
+    width: 30%;
+    height: 40%;
+  }
+
+  .show-features h2{
+    padding : 15px;
+  }
+
+  .show-features p{
+    font-size: 14px;
   }
 }
 
@@ -236,6 +272,20 @@ ul{
     padding : 10px;
     font-size : 15px;
   }
+
+  .show-features img{
+    width: 70%;
+    height: 40%;
+  }
+}
+
+
+@media screen and (min-width : 920px){
+  .show-features img{
+    width: 50%;
+    height: 40%;
+    margin-top: 15px;
+  }
 }
 
 @media screen and (min-width : 1080px){
@@ -243,6 +293,12 @@ ul{
   .container{
     width : 80%;
     margin : 0 auto;
+  }
+
+  .show-features img{
+    width: 42%;
+    height: 40%;
+    margin-top: 20px;
   }
 
 }
