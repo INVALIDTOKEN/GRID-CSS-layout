@@ -95,33 +95,41 @@ ul{
 
 .show-img{
   background-image : url("images/showcase.jpeg");
-  background-color : white;
-  opacity : 0.8;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.show-light-layover{
+  background-color : rgba(255, 255, 255, 0.4);
+  width : 100%;
+  height: 100%;
   display : flex;
   align-items : flex-end;
 }
 
 .show-content{
   width : 100%;
-  padding : 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   color : white;
-  background-color : black;
-  opacity : 0.7;
+}
+
+.show-dark-layover{
+  padding : 20px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .show-content h1{
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
 }
 
 .show-content p{
-  font-size : 16px;
+  font-size : 14px;
   margin : 10px 0px;
 }
 .show-content button{
@@ -137,7 +145,43 @@ ul{
   color: #2c3e50;
 }
 
-.show-features{
+.show-price{
+  color: #2c3e50;
+  background-color: #D2D7D3;
+  padding : 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.show-plan{
+  padding : 10px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.show-buy-price{
+  font-family: 'Fjalla One', sans-serif;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color :  #00bf8f;
+}
+
+.show-price a{
+  display: inline-block;
+  padding : 10px;
+  width : 80%;
+  font-size: 18px;
+  margin : 0 auto;
+  color : #D2D7D3;
+  text-align: center;
+  background-color : #2c3e50;
+}
+
+.show-price a:active{
+  background-color: #D2D7D3;
+  color : #2c3e50;
 }
 
 /* =============================
@@ -156,9 +200,12 @@ ul{
     margin-bottom : 0px;
   }
 
+  .nav-grid-item:not(:last-child){
+    margin-right: 10px;
+  }
+
   .nav-grid-item{
     margin-bottom : 10px;
-    margin-right : 10px;
     flex-grow : 1;
     flex-basis : 150px;
   }
